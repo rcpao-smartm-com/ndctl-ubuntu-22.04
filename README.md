@@ -12,3 +12,6 @@ This bash script installs kernel 6.5 in Ubuntu 22.04:
 
 This bash script installs kernel 6.6 in Ubuntu 22.04:
 - **ubuntu-22.04-kernel-6.6.sh** installs mainline kernel 6.6 in Ubuntu 22.04
+
+Hold down [left-shift] key while booting to enter GRUB menu.
+Choose "Advanced Options for Ubuntu" then select the kernel version to boot.

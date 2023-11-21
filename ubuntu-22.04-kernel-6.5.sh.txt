@@ -1,0 +1,100 @@
+Hit:1 http://us.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu jammy-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  linux-generic linux-headers-generic linux-image-generic
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Linux ub22svr 6.6.1-060601-generic #202311151749 SMP PREEMPT_DYNAMIC Thu Nov 16 03:15:36 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+UBUNTU_CODENAME=jammy
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  linux-headers-6.5.0-1008-oem linux-headers-oem-22.04d
+  linux-image-6.5.0-1008-oem linux-image-oem-22.04d
+  linux-modules-6.5.0-1008-oem linux-oem-6.5-headers-6.5.0-1008
+Suggested packages:
+  fdutils linux-oem-6.5-tools
+The following NEW packages will be installed:
+  linux-headers-6.5.0-1008-oem linux-headers-oem-22.04d
+  linux-image-6.5.0-1008-oem linux-image-oem-22.04d
+  linux-modules-6.5.0-1008-oem linux-oem-22.04d
+  linux-oem-6.5-headers-6.5.0-1008
+0 upgraded, 7 newly installed, 0 to remove and 3 not upgraded.
+Need to get 133 MB of archives.
+After this operation, 720 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-oem-6.5-headers-6.5.0-1008 all 6.5.0-1008.8 [13.2 MB]
+Get:2 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-headers-6.5.0-1008-oem amd64 6.5.0-1008.8 [3,447 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-headers-oem-22.04d amd64 6.5.0.1008.10 [2,454 B]
+Get:4 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-modules-6.5.0-1008-oem amd64 6.5.0-1008.8 [102 MB]
+Get:5 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-image-6.5.0-1008-oem amd64 6.5.0-1008.8 [14.0 MB]
+Get:6 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-image-oem-22.04d amd64 6.5.0.1008.10 [2,594 B]
+Get:7 http://us.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-oem-22.04d amd64 6.5.0.1008.10 [1,704 B]
+Fetched 133 MB in 60s (2,202 kB/s)
+Selecting previously unselected package linux-oem-6.5-headers-6.5.0-1008.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 213095 files and directories currently installed.)
+Preparing to unpack .../0-linux-oem-6.5-headers-6.5.0-1008_6.5.0-1008.8_all.deb ...
+Unpacking linux-oem-6.5-headers-6.5.0-1008 (6.5.0-1008.8) ...
+Selecting previously unselected package linux-headers-6.5.0-1008-oem.
+Preparing to unpack .../1-linux-headers-6.5.0-1008-oem_6.5.0-1008.8_amd64.deb ...
+Unpacking linux-headers-6.5.0-1008-oem (6.5.0-1008.8) ...
+Selecting previously unselected package linux-headers-oem-22.04d.
+Preparing to unpack .../2-linux-headers-oem-22.04d_6.5.0.1008.10_amd64.deb ...
+Unpacking linux-headers-oem-22.04d (6.5.0.1008.10) ...
+Selecting previously unselected package linux-modules-6.5.0-1008-oem.
+Preparing to unpack .../3-linux-modules-6.5.0-1008-oem_6.5.0-1008.8_amd64.deb ...
+Unpacking linux-modules-6.5.0-1008-oem (6.5.0-1008.8) ...
+Selecting previously unselected package linux-image-6.5.0-1008-oem.
+Preparing to unpack .../4-linux-image-6.5.0-1008-oem_6.5.0-1008.8_amd64.deb ...
+Unpacking linux-image-6.5.0-1008-oem (6.5.0-1008.8) ...
+Selecting previously unselected package linux-image-oem-22.04d.
+Preparing to unpack .../5-linux-image-oem-22.04d_6.5.0.1008.10_amd64.deb ...
+Unpacking linux-image-oem-22.04d (6.5.0.1008.10) ...
+Selecting previously unselected package linux-oem-22.04d.
+Preparing to unpack .../6-linux-oem-22.04d_6.5.0.1008.10_amd64.deb ...
+Unpacking linux-oem-22.04d (6.5.0.1008.10) ...
+Setting up linux-modules-6.5.0-1008-oem (6.5.0-1008.8) ...
+Setting up linux-oem-6.5-headers-6.5.0-1008 (6.5.0-1008.8) ...
+Setting up linux-headers-6.5.0-1008-oem (6.5.0-1008.8) ...
+Setting up linux-image-6.5.0-1008-oem (6.5.0-1008.8) ...
+I: /boot/vmlinuz.old is now a symlink to vmlinuz-6.6.1-060601-generic
+I: /boot/initrd.img.old is now a symlink to initrd.img-6.6.1-060601-generic
+I: /boot/vmlinuz is now a symlink to vmlinuz-6.5.0-1008-oem
+I: /boot/initrd.img is now a symlink to initrd.img-6.5.0-1008-oem
+Setting up linux-headers-oem-22.04d (6.5.0.1008.10) ...
+Setting up linux-image-oem-22.04d (6.5.0.1008.10) ...
+Setting up linux-oem-22.04d (6.5.0.1008.10) ...
+Processing triggers for linux-image-6.5.0-1008-oem (6.5.0-1008.8) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.5.0-1008-oem
+/etc/kernel/postinst.d/vboxadd:
+VirtualBox Guest Additions: Building the modules for kernel 6.5.0-1008-oem.
+
+This system is currently not set up to build kernel modules.
+Please install the Linux kernel "header" files matching the current kernel
+for adding new hardware support to the system.
+The distribution packages containing the headers are probably:
+    linux-headers-generic linux-headers-6.6.1-060601-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.6.1-060601-generic
+Found initrd image: /boot/initrd.img-6.6.1-060601-generic
+Found linux image: /boot/vmlinuz-6.5.0-1008-oem
+Found initrd image: /boot/initrd.img-6.5.0-1008-oem
+Found linux image: /boot/vmlinuz-5.15.0-88-generic
+Found initrd image: /boot/initrd.img-5.15.0-88-generic
+Found linux image: /boot/vmlinuz-5.15.0-67-generic
+Found initrd image: /boot/initrd.img-5.15.0-67-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+done
+Not rebooting.  You are still using 6.6.1-060601-generic.

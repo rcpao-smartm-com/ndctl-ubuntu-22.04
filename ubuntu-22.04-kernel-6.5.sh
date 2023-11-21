@@ -44,6 +44,10 @@ uname -a
 # Linux ub22svr-ndctl 6.5.0-1003-oem #3-Ubuntu SMP PREEMPT_DYNAMIC Mon Aug 28 15:04:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 # rcpao@ub22svr-ndctl:~$ uname -r
 # 6.5.0-1003-oem
+
+TARGET_UNAME_R="6.5.0-1003-oem"
+
+
 UNAME_R=$(uname -r)
 
 
@@ -55,12 +59,15 @@ UNAME_R=$(uname -r)
 
 echo UBUNTU_CODENAME=${UBUNTU_CODENAME}
 if [ "${UBUNTU_CODENAME}" == "jammy" ]; then # jammy = 22.04
-    if [ "${UNAME_R}" != "6.5.0-1003-oem" ]; then
+    if [ "${UNAME_R}" != "${TARGET_UNAME_R}" ]; then
         # https://ubuntuhandbook.org/index.php/2023/09/linux-kernel-6-5-is-ready-to-install-in-ubuntu-22-04-lts/
         sudo ${APTGETENV} apt-get -y install linux-oem-22.04d
         # https://stackoverflow.com/questions/18544359/how-do-i-read-user-input-into-a-variable-in-bash
-        read -p "Reboot to 6.5.0-1003-oem? (y/n): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || sudo reboot
-        echo "Not rebooting, but you really should."
-        return 1
+        read -p "Reboot to ${TARGET_UNAME_R}? (y/n): " confirm 
+	if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
+	    sudo reboot
+	else
+            echo "Not rebooting.  You are still using ${UNAME_R}."
+	fi
     fi
 fi

@@ -1,6 +1,6 @@
 # ndctl-ubuntu-22.04 README.md
 
-These bash scripts installs https://github.com/pmem/ndctl [v78](https://github.com/pmem/ndctl/commit/a871e6153b11fe63780b37cdcb1eb347b296095c) in a newly installed Ubuntu 22.04:
+These bash scripts installs https://github.com/pmem/ndctl [v78](https://github.com/pmem/ndctl/commit/a871e6153b11fe63780b37cdcb1eb347b296095c) in a newly installed Ubuntu 22.04.3 (desktop or server):
 
 1. **ndctl-prereqs-ubuntu-22.04.sh** apt-get install required packages to clone and build ndctl
 2. **ndctl-clone-build-install.sh** clone, build, and install ndctl

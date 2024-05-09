@@ -6,7 +6,7 @@
 ndctl_info() {
   ndctl -v
   ls -l `which ndctl`
-  ldd ndctl
+  ldd `which ndctl`
   ls -l /lib/libndctl.so*
 }
 

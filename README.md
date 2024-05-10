@@ -5,7 +5,7 @@ These bash scripts installs https://github.com/pmem/ndctl [v78](https://github.c
 1. **ndctl-prereqs-ubuntu-22.04.sh** apt-get install required packages to clone and build ndctl
 2. **ndctl-clone-build-install.sh** clone, build, and install ndctl
 
-Install ndctl **before** updating or running the kernel because the new kernel headers may be incompatible with the existing C libraries.
+Install ndctl **before** updating or running the new kernel because the new kernel headers may be incompatible with the existing C libraries.
 
 This bash script installs kernel 6.5 in Ubuntu 22.04:
 - **ubuntu-22.04-kernel-6.5.sh** installs OEM Kernel 6.5 in Ubuntu 22.04

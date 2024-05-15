@@ -4,15 +4,18 @@
 # Roger C. Pao <roger.pao@smartm.com>
 
 ndctl_info() {
-  ndctl -v
-  ls -l `which ndctl`
-  ldd `which ndctl`
-  ls -l /lib/libndctl.so*
+  NDCTLBIN=$(which ndctl)
+  if [ $? -eq 0 ]; then
+    ${NDCTLBIN} -v
+    ls -l ${NDCTLBIN}
+    ldd ${NDCTLBIN}
+    ls -l /lib/libndctl.so*
+  fi
 }
 
 
 uname -a
-head -n 1 /etc/os-release
+cat /etc/os-release
 
 echo "Prior to ndctl clone, compile, and install."
 ndctl_info

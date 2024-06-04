@@ -17,7 +17,7 @@ ls -l /dev/dax*
 daxctl list
 ls -l /dev/cxl/mem*
 sudo cxl list -vvv
-cxl list -HMui
+sudo cxl list -HMui
 # echo 4000 | sudo tee /proc/sys/vm/nr_hugepages
 # ./mlc
 

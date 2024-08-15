@@ -25,7 +25,7 @@ echo "Begin ndctl clone, compile, and install."
 pushd ndctl
   git pull
   meson setup build;
-  meson compile -C build;
+  CFLAGS="-g" meson compile -C build;
   sudo meson install -C build
 popd
 

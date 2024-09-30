@@ -8,7 +8,7 @@
 # ${APTGETENV} 
 APTGETENV="NEEDRESTART_MODE=a"
 sudo ${APTGETENV} apt-get -y update
-sudo ${APTGETENV} apt-get -y upgrade
+# sudo ${APTGETENV} apt-get -y upgrade
 # sudo ${APTGETENV} apt-get -y dist-upgrade
 
 
